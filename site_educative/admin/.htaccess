@@ -1,0 +1,4 @@
+Authname "Espace administrateur"
+Authtype Basic
+AuthUserFile "C:\Program Files (x86)\EasyPHP-Devserver-17\eds-www\site_educative\admin\.htpasswd"
+Require valid-user

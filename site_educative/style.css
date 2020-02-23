@@ -1,0 +1,229 @@
+/** Fonts */
+@font-face {
+    font-family:Nunito;
+    src: url(fonts/Nunito-Regular.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family:Nunito;
+    src: url(fonts/Nunito-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family:Nunito;
+    src: url(fonts/Nunito-Light.ttf);
+    font-weight: 300;
+}
+
+
+/* general */
+body {
+  background: #efefef;
+  font-family: Nunito, sans-serif;
+    
+}
+a, a:hover, a:focus{
+    text-decoration: none;
+    color: #fff;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+ /* header */
+
+@keyframes clignote{
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+header{
+    line-height: 50px;
+    background: #5fcf80;
+    text-align: center;
+    font-weight: 700;
+}
+header h1 a {
+    font-size: 1.5em;
+}
+
+header nav {
+    font-size: .9em;
+}
+header h1 a span {
+    animation: clignote .5s ease alternate infinite;
+}
+
+/* Présentation */
+
+section {
+    padding: 30px 0px;
+    background: #fff;
+    border-bottom: 3px solid #ddd;
+    text-align: center;   
+}
+section h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;   
+}
+section p{
+    font-size: 1.2em;
+    color: #777;
+    line-height: 1.4em;
+    font-style: italic;
+}
+
+/* Article */ 
+
+.articles {
+margin-bottom: 30px;
+}
+
+article {
+    margin-top: 30px;
+    border-radius: 7px;
+    background: #fff;
+    border-bottom: 2px solid #ddd;
+}
+
+article img {
+    border-radius: 7px 7px 0 0;
+}
+
+article h1, article a, article p {
+    margin: 20px;
+}
+
+article h1 {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.8em;
+    line-height: 1.3em;
+}
+
+article p {
+    color : #555;
+    line-height: 1.4em;
+}
+article a {
+    display: block;
+    background: #5fcf80;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 2px solid #4ca666;
+}
+
+
+
+/*Affichage sur tablette */
+
+@media(min-width:600px){
+    
+    header h1{
+        text-align: left;
+    }
+    header ul {
+        float: right;
+    }
+    header li {
+        float: left;
+    }
+    header li + li {
+        margin-left: 15px;
+    }
+    section {
+        text-align: left;
+    }
+    .articles div:nth-child(2n+1){
+        clear :left;     
+    }
+    
+}
+ 
+
+/* Affichage sur ecran de bureau */
+
+@media(min-width:900px){
+    
+     .articles div:nth-child(3n+1){
+        clear :none;     
+    }
+       .articles div:nth-child(3n+1){
+        clear :left;     
+    }
+    article img {
+        
+        filter: grayscale(100%);
+    
+    }
+    article:hover img{
+        filter: none;
+    }
+    
+}
+
+
+table
+{width:100%;border-radius:5px;background:white}
+
+table tr td
+{line-height:2.5em;text-align:left;color:#000}
+
+table tr+tr
+{border-top:1px solid #efefef}
+
+table tr th
+{text-align:center;color:red; font-weight: bolder;font-size: 1.5em}
+
+form input
+{width:80%;height:20px;border:none;border-radius:5px}
+
+form input[type="text"],form input[type="password"]
+{border-bottom:2px solid #ccc;padding-left:20px;color:#333;margin-bottom:20px}
+
+
+form input[type="submit"]
+{background:#5fcf80;color:white;font-size:1em;height:40px;}
+
+form .message
+{margin-bottom:20px;border-radius:5px;font-size:.9em;padding:10px;color:#fff;line-height:1.3em}
+form .erreur
+{background:#cf5f5f;border-bottom:2px solid #ad3434}
+form .confirmation
+{background:#5fcf80;border-bottom:2px solid #34ad58}
+
+form .message
+{margin-bottom:20px;border-radius:5px;font-size:.9em;padding:10px;color:#fff;line-height:1.3em}
+form .erreur
+{background:#cf5f5f;border-bottom:2px solid #ad3434}
+form .confirmation
+{background:#5fcf80;border-bottom:2px solid #34ad58}
+
+#comm
+{
+    
+    font-size: 1.5em;
+    font-weight: bold;
+    color: blueviolet;
+    margin-bottom: 15px ;
+    margin-top: 15px;
+    
+}
+div p
+{
+ font-size: 1.2em;
+    font-weight: bold;
+    color: royalblue;
+    margin-bottom: 15px ;
+    margin-top: 15px;
+    
+}
+
+
+
+
